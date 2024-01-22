@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AdoProject.DTO
+{
+    public class MenteeDto
+    {
+        public string Email {get; set;}
+        public string Role {get; set;}
+         public int Age {get; set;}
+        public string FirstName {get; set;}
+        public string LastName {get; set;}
+        public string Address{get; set;}
+        public string PhoneNumber{get; set;}
+        public int menteeId {get;set;}
+        public int MentorId{get;set;}
+        
+        public string MentorRef{get;set;}
+        public string ReferenceNo { get; set; }
+        public int UserId {get;set;}
+        public int ProfileId{get;set;}
+     
+    }
+
+
+    public class MenteeRequestModel
+    {
+        public string Email {get; set;}
+        public string Password {get; set;}
+        public int Age {get; set;}
+        public string FirstName {get; set;}
+        public string LastName {get; set;}
+        public string Address{get; set;}
+        public string PhoneNumber{get; set;}   
+    }
+
+    public class UpdateMenteeRequestModel
+    {
+        public int Id {get; set;}
+        public int mentorId {get; set;}
+    }
+
+   
+}
